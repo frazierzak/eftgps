@@ -135,7 +135,7 @@
 
   }
 
-  nav > a:hover {
+  nav > a:hover, nav > a.active {
     color: #3e3e3e;
     background: #fab625;
   }
