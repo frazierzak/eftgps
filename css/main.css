@@ -201,24 +201,26 @@
     justify-content: space-between;
     align-items: center;
     border-top: 1px dashed #fff;
-    /*padding: 0 0 5px 0;*/
     padding: 20px;
-    /*border-radius: 10px;*/
-    /*margin: 0 0 5px 0;*/
-    background: linear-gradient( rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 0.83) ), url(../maps/thumbs/customs_1_27_marvelin.png);
     background-size: cover;
     background-position: center;
     transition: all 150ms;
   }
 
-  section.maps > div > div:nth-child(odd) {
-    /*background: #292929;*/
+  .customs.map1 {
+    background: linear-gradient( rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 0.83) ), url(../maps/thumbs/customs_1_27_marvelin.png);
   }
 
-  section.maps > div > div:hover {
-    /*background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../maps/thumbs/customs_1_27_marvelin.png);*/
-    /*background: rgb(0,0,0);*/
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 65%, rgba(1,0,18,0) 75%, rgba(0,0,0,1) 100%), url(../maps/thumbs/customs_1_27_marvelin.png); 
+  .customs.map2 {
+    background: linear-gradient( rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 0.83) ), url(../maps/thumbs/customs_2_13_glory4lyfe.png)
+  }
+
+  .customs.map1:hover {
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5018207966780462) 65%, rgba(1,0,18,0.499019676229867) 75%, rgba(0,0,0,1) 100%), url(../maps/thumbs/customs_1_27_marvelin.png); 
+  }
+
+  .customs.map2:hover {
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5018207966780462) 65%, rgba(1,0,18,0.499019676229867) 75%, rgba(0,0,0,1) 100%), url(../maps/thumbs/customs_2_13_glory4lyfe.png); 
   }
 
   section.maps > div > div:first-of-type {
