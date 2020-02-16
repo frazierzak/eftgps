@@ -140,6 +140,10 @@
     background: #fab625;
   }
 
+  nav > a.disabled {
+    color: #737373;
+  }
+
   nav > a:first-of-type {
     border-left: none;
   }
