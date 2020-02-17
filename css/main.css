@@ -97,9 +97,10 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-  * {
+  *, *:after, *:before {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
 
 
@@ -108,13 +109,19 @@
     color: #fff;
     font-family: 'Tomorrow', sans-serif;
     /*width: 100%;*/
-    overflow:hidden;
+    /*overflow:hidden;*/
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
   }
 
   header {
     width: 100%;
     z-index: 9999;
     background: #3e3e3e;
+    position: fixed;
   }
 
   nav {
@@ -190,7 +197,7 @@
     justify-content: center;
   }
 
-  section.maps > div {
+  .maps > div {
     width: 15%;
     margin: 0 5% 40px 0;
     display: flex;
@@ -200,7 +207,7 @@
     padding: 20px 0 0 0;
   }
 
-  section.maps > div > div {
+  .maps > div > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -227,26 +234,26 @@
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5018207966780462) 65%, rgba(1,0,18,0.499019676229867) 75%, rgba(0,0,0,1) 100%), url(../maps/thumbs/customs_2_13_glory4lyfe.png); 
   }
 
-  section.maps > div > div:first-of-type {
+  .maps > div > div:first-of-type {
     border-top: 1px solid #fff;
   }
 
-  section.maps > div > div > a:first-of-type {
+  .maps > div > div > a:first-of-type {
     width: 75%;
   }
 
-  section.maps > div > div > a > span {
+  .maps > div > div > a > span {
     display: block;
     color: #fff;
     font-size: 14px;
   }
 
-  section.maps h2 {
+  .maps h2 {
     margin: 0 0 20px 0;
     text-align: center;
   }
 
-  section.maps a {
+  .maps a {
     font-size: 18px;
     color: #fab625;
     text-decoration: none;
@@ -256,7 +263,7 @@
     /*border-radius: 10px;*/
   }
 
-  section.maps a:hover {
+  .maps a:hover {
     color: #fff;
   }
 
@@ -303,6 +310,17 @@
     color: #535353;
     background: #1c1c1c;
   }
+
+  @media screen and (max-width: 1000px) {
+    .maps {
+      display: flex;
+      padding: 60px 3%;
+    }
+
+    .maps > div {
+      width: 100%;
+      margin: 0 0 20px 0;
+    }
 
 
 /* ==========================================================================
