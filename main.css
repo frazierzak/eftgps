@@ -108,7 +108,7 @@ nav a:after {
 nav a:hover:after {
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
-	border-bottom: 10px solid #3a3a3a;
+	border-bottom: 10px solid #2d2d2d;
 }
 
 nav a span {
@@ -292,5 +292,12 @@ p.map_date {
 /*--------------------MOBILE-------*/
 
 @media screen and (max-width: 1000px) {
-
+	.map_list_holder {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.map_list {
+		width: 90%;
+	}
 }
