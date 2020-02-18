@@ -52,7 +52,6 @@ header {
 	display: flex;
 	justify-content: center;
 	width: 100%;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	position: fixed;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -146,7 +145,7 @@ section {
 	/*align-items: flex-start;*/
 	max-width: 1024px;
 	width: 100%;
-	padding: 0 0 1rem 0;
+	padding: 0 1rem 1rem 1rem;
 	/*flex-wrap: wrap;*/
 }
 
@@ -157,7 +156,12 @@ section:first-of-type {
 section > h1 {
 	width: 100%;
 	display: block;
-	margin: 0 0 1rem 0;
+	margin: 0;
+	background: #1d1d1d;
+	padding: 1rem;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .map_list_holder {
@@ -165,6 +169,7 @@ section > h1 {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: flex-start;
+	margin: 1rem 0 0 0;
 }
 
 .map_list {
@@ -253,10 +258,37 @@ p.map_date {
 	margin: 0;
 }
 
+.map_footer {
+	text-align: center;
+	font-size: 0.8em;
+	width: 100%;
+	display: flex;
+}
+
+.map_footer a {
+	width: 100%;
+	padding: 0.5rem;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	transition: all 250ms;
+}
+
+.map_footer a:hover {
+	color: #3a3a3a;
+	background: #f6cc4a;
+}
+
 .table {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	background: #3a3a3a;
+	border-radius: 10px;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	/*border: 1px solid #1d1d1d4f;*/
+	margin: 0 0 1rem 0;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .theaders {
@@ -279,10 +311,6 @@ p.map_date {
 
 .trow:nth-child(odd) {
 	background: #545454;
-}
-
-.trow:hover {
-	background: #656565;
 }
 
 .guide_date, .guide_author {
