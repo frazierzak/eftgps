@@ -4,18 +4,22 @@
 	<title>TARKOVPEDIA</title>
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<header>
-		<nav>
-			<a href="#">TARKOVPEDIA</a>
-			<a href="#maps">MAPS</a>
-			<a href="#keys">KEYS</a>
-			<a href="#">TASKS</a>
-			<a href="#">MISC.</a>
-			<a href="#">SUBMIT</a>
-			<a href="#">CONTACT</a>
+		<nav id="nav" class="nav">
+			<a href="#" class="button">TARKOVPEDIA</a>
+			<a href="#maps" class="button">MAPS</a>
+			<a href="#keys" class="button">KEYS</a>
+			<a href="#tasks" class="button">TASKS</a>
+			<a href="#misc" class="button">MISC.</a>
+			<a href="#" class="button">SUBMIT</a>
+			<a href="#" class="button">CONTACT</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
 		</nav>
 	</header>
 	<section id="maps">
@@ -26,143 +30,143 @@
 			</svg>
 		</h1>
 		
-			<div class="map_list">
-				<div class="map_title">
-					<h2>Customs</h2>
+		<div class="map_list">
+			<div class="map_title">
+				<h2>Customs</h2>
+			</div>
+			<div class="map_listing">
+				<div class="map_name_date">
+					<a class="map_name" href="#">Even Longer Longer Map Name</a>
+					<p class="map_date">
+						Feb. 18th, 2020
+					</p>
 				</div>
-				<div class="map_listing">
-					<div class="map_name_date">
-						<a class="map_name" href="#">Even Longer Longer Map Name</a>
-						<p class="map_date">
-							Feb. 18th, 2020
-						</p>
-					</div>
-					<p class="map_desc">Map Description. Very Short. <a href="#">Author</a> link here.</p>
+				<p class="map_desc">Map Description. Very Short. <a href="#">Author</a> link here.</p>
+			</div>
+			<div class="map_listing">
+				<div class="map_name_date">
+					<a class="map_name" href="#">Map Name</a>
+					<p class="map_date">
+						Feb. 18th, 2020
+					</p>
 				</div>
-				<div class="map_listing">
-					<div class="map_name_date">
-						<a class="map_name" href="#">Map Name</a>
-						<p class="map_date">
-							Feb. 18th, 2020
-						</p>
-					</div>
-					<p class="map_desc">Map Description. Very Short. <a href="#">Author</a> link here.</p>
+				<p class="map_desc">Map Description. Very Short. <a href="#">Author</a> link here.</p>
+			</div>
+			<div class="map_listing">
+				<div class="map_name_date">
+					<a class="map_name" href="#">Map Name</a>
+					<p class="map_date">
+						Feb. 18th, 2020
+					</p>
 				</div>
-				<div class="map_listing">
-					<div class="map_name_date">
-						<a class="map_name" href="#">Map Name</a>
-						<p class="map_date">
-							Feb. 18th, 2020
-						</p>
-					</div>
-					<p class="map_desc">Map Description. Very Short. <a href="#">Author</a> link here.</p>
+				<p class="map_desc">Map Description. Very Short. <a href="#">Author</a> link here.</p>
+			</div>
+			<div class="map_footer">
+				<a href="#">More Customs Maps</a>
+			</div>
+		</div><!-- map_list -->
+		<div class="map_list">
+			<div class="map_title">
+				<h2>Factory</h2>
+			</div>
+			<div class="map_listing">
+				<div class="map_name_date">
+					<a class="map_name" href="#">Map Name</a>
+					<p class="map_date">
+						Feb. 18th, 2020
+					</p>
 				</div>
-				<div class="map_footer">
-					<a href="#">More Customs Maps</a>
+				<p class="map_desc">Map Description. Very Short. <a href="#">Author</a> link here.</p>
+			</div>
+			<div class="map_footer">
+				<a href="#">More Factory Maps</a>
+			</div>
+		</div><!-- map_list -->
+		<div class="map_list">
+			<div class="map_title">
+				<h2>Interchange</h2>
+			</div>
+			<div class="map_listing">
+				<div class="map_name_date">
+					<a class="map_name" href="#">Map Name</a>
+					<p class="map_date">
+						Feb. 18th, 2020
+					</p>
 				</div>
-			</div><!-- map_list -->
-			<div class="map_list">
-				<div class="map_title">
-					<h2>Factory</h2>
+				<p class="map_desc">Map Description. Very Short. <a href="#">Author</a> link here.</p>
+			</div>
+			<div class="map_footer">
+				<a href="#">More Interchange Maps</a>
+			</div>
+		</div><!-- map_list -->
+		<div class="map_list">
+			<div class="map_title">
+				<h2>Lab</h2>
+			</div>
+			<div class="map_listing">
+				<div class="map_name_date">
+					<a class="map_name" href="#">Map Name</a>
+					<p class="map_date">
+						Feb. 18th, 2020
+					</p>
 				</div>
-				<div class="map_listing">
-					<div class="map_name_date">
-						<a class="map_name" href="#">Map Name</a>
-						<p class="map_date">
-							Feb. 18th, 2020
-						</p>
-					</div>
-					<p class="map_desc">Map Description. Very Short. <a href="#">Author</a> link here.</p>
+				<p class="map_desc">Map Description. Very Short. <a href="#">Author</a> link here.</p>
+			</div>
+			<div class="map_footer">
+				<a href="#">More Lab Maps</a>
+			</div>
+		</div><!-- map_list -->
+		<div class="map_list">
+			<div class="map_title">
+				<h2>Reserve</h2>
+			</div>
+			<div class="map_listing">
+				<div class="map_name_date">
+					<a class="map_name" href="#">Map Name</a>
+					<p class="map_date">
+						Feb. 18th, 2020
+					</p>
 				</div>
-				<div class="map_footer">
-					<a href="#">More Factory Maps</a>
+				<p class="map_desc">Map Description. Very Short. <a href="#">Author</a> link here.</p>
+			</div>
+			<div class="map_footer">
+				<a href="#">More Reserve Maps</a>
+			</div>
+		</div><!-- map_list -->
+		<div class="map_list">
+			<div class="map_title">
+				<h2>Shoreline</h2>
+			</div>
+			<div class="map_listing">
+				<div class="map_name_date">
+					<a class="map_name" href="#">Map Name</a>
+					<p class="map_date">
+						Feb. 18th, 2020
+					</p>
 				</div>
-			</div><!-- map_list -->
-			<div class="map_list">
-				<div class="map_title">
-					<h2>Interchange</h2>
+				<p class="map_desc">Map Description. Very Short. <a href="#">Author</a> link here.</p>
+			</div>
+			<div class="map_footer">
+				<a href="#">More Shoreline Maps</a>
+			</div>
+		</div><!-- map_list -->
+		<div class="map_list">
+			<div class="map_title">
+				<h2>Woods</h2>
+			</div>
+			<div class="map_listing">
+				<div class="map_name_date">
+					<a class="map_name" href="#">Map Name</a>
+					<p class="map_date">
+						Feb. 18th, 2020
+					</p>
 				</div>
-				<div class="map_listing">
-					<div class="map_name_date">
-						<a class="map_name" href="#">Map Name</a>
-						<p class="map_date">
-							Feb. 18th, 2020
-						</p>
-					</div>
-					<p class="map_desc">Map Description. Very Short. <a href="#">Author</a> link here.</p>
-				</div>
-				<div class="map_footer">
-					<a href="#">More Interchange Maps</a>
-				</div>
-			</div><!-- map_list -->
-			<div class="map_list">
-				<div class="map_title">
-					<h2>Lab</h2>
-				</div>
-				<div class="map_listing">
-					<div class="map_name_date">
-						<a class="map_name" href="#">Map Name</a>
-						<p class="map_date">
-							Feb. 18th, 2020
-						</p>
-					</div>
-					<p class="map_desc">Map Description. Very Short. <a href="#">Author</a> link here.</p>
-				</div>
-				<div class="map_footer">
-					<a href="#">More Lab Maps</a>
-				</div>
-			</div><!-- map_list -->
-			<div class="map_list">
-				<div class="map_title">
-					<h2>Reserve</h2>
-				</div>
-				<div class="map_listing">
-					<div class="map_name_date">
-						<a class="map_name" href="#">Map Name</a>
-						<p class="map_date">
-							Feb. 18th, 2020
-						</p>
-					</div>
-					<p class="map_desc">Map Description. Very Short. <a href="#">Author</a> link here.</p>
-				</div>
-				<div class="map_footer">
-					<a href="#">More Reserve Maps</a>
-				</div>
-			</div><!-- map_list -->
-			<div class="map_list">
-				<div class="map_title">
-					<h2>Shoreline</h2>
-				</div>
-				<div class="map_listing">
-					<div class="map_name_date">
-						<a class="map_name" href="#">Map Name</a>
-						<p class="map_date">
-							Feb. 18th, 2020
-						</p>
-					</div>
-					<p class="map_desc">Map Description. Very Short. <a href="#">Author</a> link here.</p>
-				</div>
-				<div class="map_footer">
-					<a href="#">More Shoreline Maps</a>
-				</div>
-			</div><!-- map_list -->
-			<div class="map_list">
-				<div class="map_title">
-					<h2>Woods</h2>
-				</div>
-				<div class="map_listing">
-					<div class="map_name_date">
-						<a class="map_name" href="#">Map Name</a>
-						<p class="map_date">
-							Feb. 18th, 2020
-						</p>
-					</div>
-					<p class="map_desc">Map Description. Very Short. <a href="#">Author</a> link here.</p>
-				</div>
-				<div class="map_footer">
-					<a href="#">More Woods Maps</a>
-				</div>
-			</div><!-- map_list -->
+				<p class="map_desc">Map Description. Very Short. <a href="#">Author</a> link here.</p>
+			</div>
+			<div class="map_footer">
+				<a href="#">More Woods Maps</a>
+			</div>
+		</div><!-- map_list -->
 		
 	</section>
 	<section id="keys">
@@ -226,7 +230,7 @@
 			<div class="tfooter"></div>
 		</div>
 	</section>
-	<section>
+	<section id="tasks">
 		<div class="table">
 			<h1>
 				Tasks
@@ -286,7 +290,7 @@
 			<div class="tfooter"></div>
 		</div>
 	</section>
-	<section>
+	<section id="misc">
 		<div class="table">
 			<h1>
 				Miscellaneous
@@ -347,6 +351,7 @@
 			<div class="tfooter"></div>
 		</div>
 	</section>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>

@@ -112,6 +112,10 @@ nav a:hover:after {
 	border-bottom: 10px solid #2d2d2d;
 }
 
+nav a.icon {
+	display: none;
+}
+
 /*--------------------SECTIONS-------*/
 
 section {
@@ -340,6 +344,33 @@ p.map_date {
 /*--------------------MOBILE-------*/
 
 @media screen and (max-width: 1000px) {
+	nav.nav {
+		flex-direction: row;
+		align-items: center;
+	}
+	nav.nav.responsive {
+		flex-direction: column;
+	}
+	nav a {
+		border: none;
+		/*border-bottom: 2px solid #3a3a3a;*/
+		width: 100%;
+		text-align: center;
+		flex-direction: column;
+	}
+	.nav.responsive a {
+		border: none;
+		border-bottom: 2px solid #3a3a3a;
+	}
+	nav a:not(:first-child) {
+		display: none;
+	}
+	nav a.icon {
+		display: flex;
+	}
+	nav.responsive a {
+		display: flex;
+	}
 	section {
 		flex-direction: column;
 		padding: 0.5rem;
