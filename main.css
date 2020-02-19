@@ -133,6 +133,7 @@ section > h1, .table > h1 {
 	width: 100%;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	margin: 0;
 	background: #1d1d1d;
 	padding: 1rem;
