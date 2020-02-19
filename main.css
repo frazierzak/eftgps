@@ -206,6 +206,7 @@ h1 > svg {
 	left: 0;
 	right: 0;
 	text-shadow: 1px 1px 10px rgba(0,0,0,.6);
+	font-size: 2em;
 }
 
 .map_list:nth-of-type(1) .map_title {
