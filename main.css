@@ -180,13 +180,33 @@ h1 > svg {
 
 .map_title {
 	border-radius: 5px;
-	padding: 2rem 0;
+	/*padding: 2rem 0;*/
+	width: 100%;
+	height: 160px;
+	position: relative;
+	overflow: hidden;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
 }
 
 .map_list h2 {
 	text-align: center;
 	background: #000000a8;
 	text-transform: uppercase;
+	z-index: 999;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
 }
 
 .map_list:nth-of-type(1) .map_title {
@@ -341,6 +361,8 @@ p.map_date {
 .guide_date, .guide_author {
 	text-align: right;
 }
+
+
 
 /*--------------------MOBILE-------*/
 
