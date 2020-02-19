@@ -317,6 +317,10 @@ p.map_date {
 /*--------------------MOBILE-------*/
 
 @media screen and (max-width: 1000px) {
+	section {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 	.map_list_holder {
 		flex-direction: column;
 		justify-content: center;
