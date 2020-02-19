@@ -313,8 +313,16 @@ p.map_date {
 .trow {
 	display: flex;
 	width: 100%;
-	border-radius: 4px;
+	border-radius: 5px;
 	padding: 0.5rem 1rem;
+}
+
+.tfooter {
+	width: 100%;
+	height: 1rem;
+	background: #1d1d1d;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
 
 .trow:nth-child(odd) {
