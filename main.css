@@ -178,6 +178,15 @@ h1 > svg {
 	transform: translate(0,-.5rem);
 }
 
+.map_list:hover video {
+    opacity: 1;
+}
+
+.map_list video {
+	opacity: 0;
+	transition: all 250ms;
+}
+
 .map_title {
 	border-radius: 5px;
 	/*padding: 2rem 0;*/
@@ -187,26 +196,16 @@ h1 > svg {
 	overflow: hidden;
 }
 
-.video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-}
-
 .map_list h2 {
 	text-align: center;
-	background: #000000a8;
+	background: rgba(0,0,0,.2);
 	text-transform: uppercase;
-	z-index: 999;
+	/*z-index: 999;*/
 	position: absolute;
-	top: 50%;
+	top: 0;
 	left: 0;
 	right: 0;
+	text-shadow: 1px 1px 10px rgba(0,0,0,.6);
 }
 
 .map_list:nth-of-type(1) .map_title {
