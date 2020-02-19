@@ -279,21 +279,27 @@ p.map_date {
 	width: 100%;
 	font-weight: 600;
 	font-size: 1.2em;
+	padding: 0.5rem 1rem;
 }
 
 .theaders div, .trow div {
 	width: 25%;
-	padding: 0.5rem;
+	/*padding: 0.5rem rem;*/
 }
 
 .trow {
 	display: flex;
 	width: 100%;
 	border-radius: 4px;
+	padding: 0.5rem 1rem;
 }
 
 .trow:nth-child(odd) {
 	background: #545454;
+}
+
+.guide_name {
+	text-align: left;
 }
 
 .guide_date, .guide_author {
