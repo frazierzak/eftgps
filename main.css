@@ -10,6 +10,7 @@ html {
 
 body {
 	background: #3a3a3a;
+	background-image: url(images/background_pattern.png);
 	color: #fff;
 	display: flex;
 	flex-direction: column;
@@ -289,8 +290,6 @@ p.map_date {
 	width: 100%;
 	background: #3a3a3a;
 	border-radius: 10px;
-	border-top-right-radius: 0;
-	border-top-left-radius: 0;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
