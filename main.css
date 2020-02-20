@@ -185,6 +185,12 @@ h1 > svg {
 	margin: 0 0 1rem 0;
 }
 
+.map_list_scroll {
+	max-height: 250px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 .map_list {
 	background: #f6cc4a;
 	border-radius: 10px;
