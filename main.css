@@ -272,7 +272,7 @@ a.map_listing:hover {
 }
 
 a.map_listing:nth-child(odd) {
-	background: #444444;
+	background: #545454;
 }
 
 .map_name_date {
