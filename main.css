@@ -312,11 +312,13 @@ a.map_listing:hover p.map_name:before {
 p.map_desc {
 	font-size: 0.8em;
 	margin: 0;
+	color: #fff;
 }
 
 p.map_date {
 	font-size: 0.8em;
 	margin: 0;
+	color: #fff;
 }
 
 .map_footer {
