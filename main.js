@@ -28,30 +28,13 @@ $(".button").on('click', function(event){
 	}
 });
 
-class Map {
-	constructor (name) {
-		this.name = name;
-	}
-	toString() {
-		return this.name;
-	}
-}
+// Get a reference to the database service
+var db = firebase.firestore();
 
-// Firestore data converter
-mapConverter = {
-	toFirestore: function(map) {
-		return {
-			name: map.name
-		}
-	},
-	fromFirestore: function(snapshot, options){
-		const data = snapshot.data(options);
-		return new Map(data.name)
-	}
-}
+const list_div = document.querySelector("#customs_maps");
 
-db.collection("maps").get().then(function(querySnapshot) {
-    querySnapshot.forEach(function(doc) {
-        console.log(doc.data());
-    });
+db.collection("Customs Maps").get().then(function(querySnapshot) {
+	querySnapshot.forEach(function(doc) {
+		list_div.innerHTML += '<a class="map_listing" href='+ doc.data().link +'><div class="map_name_date"><p class="map_name">'+ doc.data().name +'</p><p class="map_date">'+ doc.data().date +'</p></div><p class="map_desc">'+ doc.data().desc +'</p></a>'
+	});
 });
