@@ -10,7 +10,8 @@ html {
 
 body {
 	background: #3a3a3a;
-	background-image: url(images/background_pattern.png);
+	background-image: url('images/background_pattern2.png');
+	background-size: 400px;
 	color: #fff;
 	display: flex;
 	flex-direction: column;
@@ -185,12 +186,6 @@ h1 > svg {
 	margin: 0 0 1rem 0;
 }
 
-.map_list_scroll {
-	max-height: 250px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-
 .map_list {
 	background: #f6cc4a;
 	border-radius: 10px;
@@ -212,6 +207,10 @@ h1 > svg {
 .map_list video {
 	opacity: 0;
 	transition: all 250ms;
+}
+
+.map_list.full_width {
+	width: 100%;
 }
 
 .map_title {
@@ -378,8 +377,7 @@ p.map_date {
 }
 
 .tbody {
-    max-height: 250px;
-    overflow: auto;
+
 }
 
 .trow {
