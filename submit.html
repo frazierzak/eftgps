@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TARKOVPEDIA</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+        <nav id="nav" class="nav">
+            <a href="index.html" class="button">TARKOVPEDIA</a>
+            <a href="index.html#maps" class="button">MAPS</a>
+            <a href="index.html#keys" class="button">KEYS</a>
+            <a href="index.html#tasks" class="button">TASKS</a>
+            <a href="index.html#misc" class="button">MISC.</a>
+            <a href="submit.html" class="button active">SUBMIT</a>
+            <a href="#" class="button">CONTACT</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+    <section id="submit">
+        <h1>Submit Map</h1>
+        <div id="submit_form">
+            <p>Submit your user made map below:</p>
+            <select id="map" name="map">
+                <option value="customs" selected="">Customs</option>
+                <option value="factory">Factory</option>
+                <option value="interchange">Interchange</option>
+                <option value="lab">Lab</option>
+                <option value="reserve">Reserve</option>
+                <option value="shoreline">Shoreline</option>
+                <option value="woods">Woods</option>
+            </select> 
+            <input type="text" placeholder="Name" name="name" id="name">
+            <input type="text" placeholder="Description" name="desc" id="desc">
+            <input type="text" placeholder="Date (MM-DD-YY)" name="date" id="date">
+            <input type="file" name="Map Image" id="map_image">
+            <button id="submit_button" onclick="storeData()">Submit</button>
+            <progress value="0" max="100" id="uploadProgress">0%</progress>
+        </div>
+    </section>
+
+     <!-- Firebase -->
+     <script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-app.js"></script>
+
+     <script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-analytics.js"></script>
+
+     <!-- <script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-auth.js"></script> -->
+     <!-- <script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-database.js"></script> -->
+     <script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-firestore.js"></script>
+
+     <script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-storage.js"></script>
+
+     <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyB87BbZcFA5B2ILk7UDJrdkWybFgkNF5x8",
+            authDomain: "tarkovpedia-e8b2a.firebaseapp.com",
+            databaseURL: "https://tarkovpedia-e8b2a.firebaseio.com",
+            projectId: "tarkovpedia-e8b2a",
+            storageBucket: "tarkovpedia-e8b2a.appspot.com",
+            messagingSenderId: "752438969251",
+            appId: "1:752438969251:web:8cc2252385756bcbbd9016",
+            measurementId: "G-2Z6KY9WMPT"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        
+
+    </script>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+
+    <!-- My JS -->
+    <script src="main.js"></script>
+</body>
+</html>

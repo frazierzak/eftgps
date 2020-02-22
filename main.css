@@ -110,7 +110,7 @@ nav a:nth-child(6) {
 	border-left: 2px solid #3a3a3a;
 }
 
-nav a:hover {
+nav a:hover, nav a.active {
 	color: #3a3a3a;
 	background: #f6cc4a;
 }
@@ -128,7 +128,7 @@ nav a:after {
 	transition: all 250ms;
 }
 
-nav a:hover:after {
+nav a:hover:after, nav a.active:after {
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
 	border-bottom: 10px solid #2d2d2d;
@@ -405,6 +405,50 @@ p.map_date {
 
 .guide_date, .guide_author {
 	text-align: right;
+}
+
+#submit_form {
+	background: #3a3a3a;
+	padding: 1rem;
+	margin: 1rem 0;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#submit_form input, #submit_form select {
+	margin: 0 0 1rem 0;
+	padding: 1rem;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 18px;
+	border: none;
+}
+
+#submit_form input:focus {
+	background: #f6cc4a;
+}
+
+#submit_form button {
+	padding: 1rem;
+	border-radius: 5px;
+	font-size: 18px;
+	border: none;
+	width: 100%;
+	transition: all 250ms;
+}
+
+#submit_form button:hover {
+	cursor: pointer;
+	background: #f6cc4a;
+}
+
+progress {
+	margin: 1rem 0 0 0;
+	width: 100%;
+	height: 50px;
 }
 
 
