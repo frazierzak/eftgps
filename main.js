@@ -60,7 +60,7 @@ function storeData() {
 
 	//On success  
 	function completeUpload(data) {
-	    // console.log('success');
+	    console.log('success');
 	    // console.log(data);
 	    uploadTask
 	    .then(snapshot => snapshot.ref.getDownloadURL())
@@ -81,6 +81,7 @@ var db = firebase.firestore();
 
 $('.list_of_maps').each(function(i, obj) {
 	const list_div = this.id;
+	console.log('Pulling Maps for '+ list_div);
     db.collection(list_div).get().then(function(querySnapshot) {
     	querySnapshot.forEach(function(doc) {
     		obj.innerHTML += '<a class="map_listing" href='+ doc.data().file_loc +'><div class="map_name_date"><p class="map_name">'+ doc.data().name +'</p><p class="map_date">'+ doc.data().date +'</p></div><p class="map_desc">'+ doc.data().desc +'</p></a>'
@@ -88,11 +89,3 @@ $('.list_of_maps').each(function(i, obj) {
     })
 
 });
-
-// const list_div = document.querySelector("#customs_maps");
-
-// db.collection("Customs Maps").get().then(function(querySnapshot) {
-// 	querySnapshot.forEach(function(doc) {
-// 		list_div.innerHTML += '<a class="map_listing" href='+ doc.data().link +'><div class="map_name_date"><p class="map_name">'+ doc.data().name +'</p><p class="map_date">'+ doc.data().date +'</p></div><p class="map_desc">'+ doc.data().desc +'</p></a>'
-// 	});
-// });
